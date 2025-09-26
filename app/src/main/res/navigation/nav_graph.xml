@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.hfad.catchat.HomeFragment"
+        android:label="Study Corner"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/cardGameFragment"
+        android:name="com.hfad.catchat.CardGameFragment"
+        android:label="Card Game"
+        tools:layout="@layout/fragment_card_game" />
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.hfad.catchat.HelpFragment"
+        android:label="About Me"
+        tools:layout="@layout/fragment_help" />
+    <fragment
+        android:id="@+id/todoListFragment"
+        android:name="com.hfad.catchat.TodoListFragment"
+        android:label="Todo List"
+        tools:layout="@layout/fragment_todo_list" />
+</navigation>

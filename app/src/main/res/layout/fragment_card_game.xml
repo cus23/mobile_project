@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardGameFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <GridLayout
+            android:id="@+id/card_grid"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="true"
+            android:gravity="center">
+
+            <!-- 9個ImageButton卡牌 -->
+            <ImageButton
+                android:id="@+id/card_1"
+                style="@style/CardButton" />
+            <ImageButton
+                android:id="@+id/card_2"
+                style="@style/CardButton" />
+            <ImageButton
+                android:id="@+id/card_3"
+                style="@style/CardButton" />
+            <ImageButton
+                android:id="@+id/card_4"
+                style="@style/CardButton" />
+            <ImageButton
+                android:id="@+id/card_5"
+                style="@style/CardButton" />
+            <ImageButton
+                android:id="@+id/card_6"
+                style="@style/CardButton" />
+            <ImageButton
+                android:id="@+id/card_7"
+                style="@style/CardButton" />
+            <ImageButton
+                android:id="@+id/card_8"
+                style="@style/CardButton" />
+            <ImageButton
+                android:id="@+id/card_9"
+                style="@style/CardButton" />
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/attempts_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="嘗試次數: 0"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/restart_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="重新遊戲"
+            android:onClick="restartGame"/>
+
+    </LinearLayout>
+</FrameLayout>
