@@ -1,0 +1,2 @@
+com/hfad/catchat/BuildConfig.java
+ com.hfad.catchat.BuildConfig
